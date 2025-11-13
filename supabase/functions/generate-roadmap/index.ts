@@ -35,12 +35,16 @@ Return ONLY valid JSON with this exact structure:
   "title": string,
   "overview": string,
   "accent_palette": [3 hex colors],
+  "weekly_hours": integer (student's available study hours per week, estimate 10-15),
+  "total_weeks_estimate": integer (sum of all weeks needed),
+  "estimated_weekly_tasks": integer (how many short tasks per week, typically 3-5),
   "steps": [
       {
         "id": number,
         "title": string,
         "summary": string,
         "duration": string,
+        "icon": string (lucide-react icon name like "book-open", "code", "database", "brain", etc),
         "milestones": [strings],
         "resources": [
           {"type":"course"|"book"|"video"|"tool", "title": string, "url": string or null}
@@ -49,10 +53,36 @@ Return ONLY valid JSON with this exact structure:
         "color_suggest": hex-color
       }
   ],
-  "pretty_markdown": string
+  "weekly_plan": [
+    {"week": number, "tasks": [actionable one-line task strings]}
+  ],
+  "projects": [
+    {
+      "name": string,
+      "description": string,
+      "repo_template": {
+        "folders": [folder name strings],
+        "readme_snippet": string
+      },
+      "starter_task": string,
+      "difficulty": "Beginner"|"Intermediate"|"Advanced"
+    }
+  ],
+  "interview_questions": [
+    {
+      "question": string,
+      "difficulty": "Easy"|"Medium"|"Hard",
+      "short_answer_tip": string
+    }
+  ],
+  "pretty_markdown": string,
+  "validation_hint": {
+    "valid_schema": boolean,
+    "errors": [strings]
+  }
 }
 
-Make it comprehensive, professional, and tailored for college placement preparation. Include 5-8 steps. Make sure it is always valid JSON with no markdown formatting.`;
+Make it comprehensive, professional, and tailored for college placement preparation. Include 5-8 steps, 3-5 projects, and 10-15 interview questions. Make weekly_plan actionable and divide work based on weekly_hours. Make sure it is always valid JSON with no markdown formatting. Use low randomness for deterministic structure.`;
 
     console.log("Calling Lovable AI for topic:", topic);
 
