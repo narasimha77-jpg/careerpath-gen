@@ -13,6 +13,7 @@ interface Step {
   title: string;
   summary: string;
   duration: string;
+  icon: string;
   milestones: string[];
   resources: Resource[];
   difficulty: "Beginner" | "Intermediate" | "Advanced";
