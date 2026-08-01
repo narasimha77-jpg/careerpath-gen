@@ -1,73 +1,68 @@
-# Welcome to your Lovable project
+CareerPath Gen
 
-## Project info
+CareerPath Gen is a web application that helps users create personalized career roadmaps based on their interests, skills, and career goals. I built this project to learn how AI can be integrated into full-stack applications to generate structured learning paths and recommendations.
 
-**URL**: https://lovable.dev/projects/27e17c94-e7f8-4f54-83df-eb57aee03f7b
+Features
 
-## How can I edit this code?
+- Generate personalized career roadmaps
+- Recommend skills and learning resources
+- Interactive and responsive user interface
+- Secure backend APIs
+- Database support for storing user information
 
-There are several ways of editing your application.
+Tech Stack
 
-**Use Lovable**
+- Next.js
+- React
+- TypeScript
+- Node.js
+- Express.js
+- PostgreSQL
+- Prisma ORM
+- OpenAI API
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/27e17c94-e7f8-4f54-83df-eb57aee03f7b) and start prompting.
+Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+Clone the repository
 
-**Use your preferred IDE**
+```bash
+git clone https://github.com/narasimha77-jpg/careerpath-gen.git
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Install dependencies
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+npm install
+```
 
-Follow these steps:
+Start the development server
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open your browser
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+http://localhost:3000
+```
 
-**Use GitHub Codespaces**
+Why I Built This
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+I wanted to build an application that helps students and professionals plan their careers more effectively. This project gave me hands-on experience with full-stack development, backend API design, database integration, and working with language models to generate personalized career recommendations.
 
-## What technologies are used for this project?
+Future Improvements
 
-This project is built with:
+- User authentication
+- Save and edit career roadmaps
+- Export roadmaps as PDF
+- Progress tracking
+- Personalized course recommendations
+- Dashboard with analytics
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Author
 
-## How can I deploy this project?
+Narasimha Mulagada
 
-Simply open [Lovable](https://lovable.dev/projects/27e17c94-e7f8-4f54-83df-eb57aee03f7b) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+GitHub:
+https://github.com/narasimha77-jpg
